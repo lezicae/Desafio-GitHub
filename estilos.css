@@ -2,6 +2,13 @@
     width: 100%;
 }
 
+body {
+    background-image: linear-gradient(to right top, #0058FF, #007AFF, #008DFF, #0098DE, #009EA7, #00A26C);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
 header{
     background-color: #DEF5F6;
     border: 7px solid black;
