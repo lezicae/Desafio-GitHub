@@ -1,0 +1,23 @@
+    img{
+    width: 100%;
+}
+
+header{
+    background-color: #DEF5F6;
+    border: 7px solid black;
+}
+
+nav{
+    display: flex;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+nav ul a{
+    margin: 1em;
+}
