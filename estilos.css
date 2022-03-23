@@ -1,30 +1,110 @@
-    img{
+img{
     width: 100%;
+    border: 1px solid black;
+    box-shadow:  -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2{
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    transition: 500ms;
+}
+
+h2:hover{
+    transform: scale(1.5);
 }
 
 body {
-    background-image: linear-gradient(to right top, #0058FF, #007AFF, #008DFF, #0098DE, #009EA7, #00A26C);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #465074, #667096, #8891B9, #ABB4DD, #CFD8FF);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
 }
 
 header{
-    background-color: #DEF5F6;
-    border: 7px solid black;
+    margin: auto;
+    padding: 0px 5rem;
+    width: 100%;
+    background-color: #def5f600;
+    align-items: flex-start;
 }
 
 nav{
-    display: flex;
+    width: 100%;
 }
 
 nav ul{
-    display: flex;
     list-style: none;
-    align-items: flex-end;
-    justify-content: space-between;
+    padding: 0%;
+    width: 100%;
+    margin: auto;
 }
 
-nav ul a{
-    margin: 1em;
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 15px;
+    display: block;
+    color: black;
+    font-size: larger;
+    transition: 500ms;
+}
+
+nav ul li a:hover{
+    background: #DEF5F6;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 700px;
+}
+
+main section {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-areas: 'imagen texto';
+}
+
+.main__article1{
+    margin: 0 0 0 1rem;
+    grid-area: imagen;
+    min-height: 100px;
+    max-height: fit-content;
+}
+
+.main__article2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: texto;
+    min-height: 100px;
+    max-height: fit-content;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+footer {
+    background-color: #DEF5F6;
+    width: 100%;
+    height: 3em;
 }
